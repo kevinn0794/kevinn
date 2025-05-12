@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forgot Password - VideoShare</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+    }
+
+    .forgot-container {
+      background-color: #fff;
+      padding: 40px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      box-sizing: border-box;
+    }
+
+    .forgot-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .forgot-container p {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .forgot-container label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    .forgot-container input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .forgot-container input[type="submit"] {
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #1e88e5;
+      color: white;
+      font-size: 1em;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .forgot-container input[type="submit"]:hover {
+      background-color: #1565c0;
+    }
+
+    .forgot-container .extra {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 0.9em;
+    }
+
+    .forgot-container .extra a {
+      color: #1e88e5;
+      text-decoration: none;
+    }
+
+    .forgot-container .extra a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="forgot-container">
+    <h2>Forgot Your Password?</h2>
+    <p>Enter your email address and we'll send you a link to reset your password.</p>
+    <form action="#" method="post">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <input type="submit" value="Send Reset Link">
+    </form>
+
+    <div class="extra">
+      <p><a href="login.html">Back to Login</a></p>
+    </div>
+  </div>
+
+</body>
+</html>

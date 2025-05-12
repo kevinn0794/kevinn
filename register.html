@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GS Gahurire TSS Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="email"],
+    input[type="file"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .section-title {
+      margin-top: 30px;
+      font-size: 18px;
+      color: #34495e;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #1c5980;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>GS Gahurire TSS Registration Form</h2>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+      <!-- Student Information -->
+      <div class="section-title">Student Information</div>
+
+      <label>Full Name</label>
+      <input type="text" name="fullname" required>
+
+      <label>Gender</label>
+      <select name="gender" required>
+        <option value="">--Select--</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+
+      <label>Date of Birth</label>
+      <input type="date" name="dob" required>
+
+      <label>Place of Birth</label>
+      <input type="text" name="pob" required>
+
+      <label>Nationality</label>
+      <input type="text" name="nationality" required>
+
+      <label>Upload Passport Photo</label>
+      <input type="file" name="photo" accept="image/*">
+
+      <!-- Academic Information -->
+      <div class="section-title">Academic Information</div>
+
+      <label>Level Applying For</label>
+      <select name="level" required>
+        <option value="">--Select Level--</option>
+        <option>Nursery</option>
+        <option>Primary</option>
+        <option>Ordinary Level (S1 - S3)</option>
+        <option>Advanced Level (S4 - S6)</option>
+      </select>
+
+      <label>Option (Only for Advanced Level)</label>
+      <select name="option">
+        <option value="">--Select Option--</option>
+        <option>Software Development</option>
+        <option>Land Survey</option>
+        <option>Building Construction</option>
+      </select>
+
+      <label>Previous School Name</label>
+      <input type="text" name="prev_school">
+
+      <label>Year of Completion</label>
+      <input type="text" name="completion_year">
+
+      <!-- Parent/Guardian Info -->
+      <div class="section-title">Parent / Guardian Information</div>
+
+      <label>Full Name</label>
+      <input type="text" name="guardian_name" required>
+
+      <label>Relationship</label>
+      <input type="text" name="relationship" required>
+
+      <label>Phone Number</label>
+      <input type="text" name="guardian_phone" required>
+
+      <label>Email Address</label>
+      <input type="email" name="guardian_email">
+
+      <label>Residential Address</label>
+      <input type="text" name="address">
+
+      <!-- Health Info -->
+      <div class="section-title">Health Information</div>
+
+      <label>Disabilities or Special Needs</label>
+      <textarea name="disabilities" rows="3"></textarea>
+
+      <label>Medical Conditions / Allergies</label>
+      <textarea name="medical" rows="3"></textarea>
+
+      <label>Health Insurance Number</label>
+      <input type="text" name="insurance_number">
+
+      <!-- Documents -->
+      <div class="section-title">Document Upload</div>
+
+      <label>Birth Certificate</label>
+      <input type="file" name="birth_certificate" accept=".pdf,.jpg,.png">
+
+      <label>Previous Report/Certificate</label>
+      <input type="file" name="report_card" accept=".pdf,.jpg,.png">
+
+      <label>Transfer Letter (if applicable)</label>
+      <input type="file" name="transfer_letter" accept=".pdf,.jpg,.png">
+
+      <!-- Declaration -->
+      <div class="section-title">Declaration</div>
+
+      <label>
+        <input type="checkbox" required> I confirm that all information provided is true.
+      </label>
+
+      <button class="btn" type="submit">Submit Registration</button>
+    </form>
+  </div>
+</body>
+</html>
