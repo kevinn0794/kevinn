@@ -20,6 +20,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    height: 200px;
+
 }
 
 header .logo {
@@ -29,8 +31,10 @@ header .logo {
 }
 
 header h1 {
+position: fixed;
     font-size: 2em;
     margin-bottom: 10px;
+left: 10px;
 }
 
 header a {
@@ -42,6 +46,7 @@ header a {
     font-weight: bold;
     border-radius: 4px;
     transition: background-color 0.3s ease;
+    transform: translateY(-100px);
 }
 
 header a:hover {
